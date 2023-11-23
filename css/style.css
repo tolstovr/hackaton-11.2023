@@ -1,6 +1,43 @@
 @charset "UTF-8";
 @import url(vars.css);
 
+/* navbar */
+aside, .navbar, .navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul {
+    align-items: center;
+    list-style: none;
+    margin-left: -2.5rem;
+}
+
+.navbar ul .nav-link {
+    transition: .125s;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    margin: .25rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    color: var(--font-200);
+    background-color: var(--dark-200);
+}
+
+.navbar ul .nav-link:hover,
+.navbar ul .nav-link.active {
+    color: var(--font-200);
+    background-color: var(--dark-300);
+}
+
+.navbar ul .nav-link:active {
+    color: var(--font-100);
+    background-color: var(--dark-300);
+    scale: 0.95;
+}
+
 /* header */
 header {
     display: flex;
@@ -22,4 +59,44 @@ header > .caption {
 
 header > .caption > .big-text {
     font-weight: bold;
+}
+
+/* game */
+.game .text-block {
+    display: flex;
+    border-radius: 25px;
+    background-color: var(--dark-200);
+    padding: 10px;
+    margin: .5rem 0;
+}
+
+.game .text-block > img {
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.game .text-block:nth-child(even) {
+    flex-direction: row;
+}
+
+.game .text-block:nth-child(even) .caption {
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+}
+
+.game .text-block:nth-child(even) img {
+    margin-right: 1rem;
+}
+
+.game .text-block:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.game .text-block:nth-child(odd) .caption {
+    margin-right: 1rem;
+    margin-left: 2.5rem;
+}
+
+.game .text-block:nth-child(odd) img {
+    margin-left: 1.5rem;
 }

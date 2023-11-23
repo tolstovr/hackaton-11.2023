@@ -11,3 +11,8 @@
 
 .big-text {font-size: 2rem;}
 .normal-text {font-size: 1.25rem;}
+
+.anchor {
+    margin: -25px 0;
+    height: 25px;
+}
