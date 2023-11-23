@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url(vars.css);
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 !important;
+    padding: 15px !important;  
+}
+
+header > img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: 50vh
+}
+
+header > .caption {
+    margin: 0 20px;
+}
+
+header > .caption > .big-text {
+    font-weight: bold;
+}

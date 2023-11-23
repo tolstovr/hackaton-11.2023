@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url(vars.css);
+
+:root {
+    --dark-100: #201f25;
+    --dark-200: #2b2a33;
+    --dark-300: #42414d;
+    --font-100: #fefefe;
+    --font-200: #cecece;
+}
+
+.big-text {font-size: 2rem;}
+.normal-text {font-size: 1.25rem;}

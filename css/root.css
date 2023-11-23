@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url(vars.css);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-200);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+aside {
+    float: left;
+    position: sticky;
+    height: 250px;
+    top: 25px;
+    color: var(--font-100);
+    background-color: var(--dark-100);
+    margin-right: 0 !important;
+}
+
+.box {
+    border-radius: 25px;
+    background-color: var(--dark-100);
+    color: var(--font-100);
+    padding: 25px;
+    margin: 25px;   
+}
