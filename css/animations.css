@@ -20,3 +20,11 @@
 .scale.element-shown {
     scale: 1;
 }
+
+.delay-250ms {
+    transition-delay: .25s !important;
+}
+
+.delay-500ms {
+    transition-delay: .5s !important;
+}

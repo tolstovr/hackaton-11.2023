@@ -7,6 +7,14 @@ aside, .navbar, .navbar ul {
     flex-direction: column;
 }
 
+.brand-separator {
+    height: 0;
+    width: calc(100% - 2rem);
+    border-top: var(--font-300) 2px solid;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
 .navbar ul {
     align-items: center;
     list-style: none;
@@ -21,14 +29,19 @@ aside, .navbar, .navbar ul {
     width: 100%;
     text-align: center;
     font-size: large;
+    font-weight: bold;
     text-decoration: none;
     color: var(--font-200);
     background-color: var(--dark-200);
 }
 
-.navbar ul .nav-link:hover,
-.navbar ul .nav-link.active {
+.navbar ul .nav-link:hover {
     color: var(--font-200);
+    background-color: var(--dark-300);
+}
+
+.navbar ul .nav-link.active {
+    color: var(--font-100);
     background-color: var(--dark-300);
 }
 
@@ -62,7 +75,7 @@ header > .caption > .big-text {
 }
 
 /* game */
-.game .text-block {
+.text-block {
     display: flex;
     border-radius: 25px;
     background-color: var(--dark-200);
@@ -70,33 +83,90 @@ header > .caption > .big-text {
     margin: .5rem 0;
 }
 
-.game .text-block > img {
+.text-block > img {
     border-radius: 18px;
     object-fit: cover;
 }
 
-.game .text-block:nth-child(even) {
+.text-block:nth-child(even) {
     flex-direction: row;
 }
 
-.game .text-block:nth-child(even) .caption {
+.text-block:nth-child(even) .caption {
     margin-right: 2.5rem;
     margin-left: 1rem;
 }
 
-.game .text-block:nth-child(even) img {
+.text-block:nth-child(even) img {
     margin-right: 1rem;
 }
 
-.game .text-block:nth-child(odd) {
+.text-block:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-.game .text-block:nth-child(odd) .caption {
+.text-block:nth-child(odd) .caption {
     margin-right: 1rem;
     margin-left: 2.5rem;
 }
 
-.game .text-block:nth-child(odd) img {
+.text-block:nth-child(odd) img {
     margin-left: 1.5rem;
+}
+
+/* download */
+.download h1 {
+    font-size: 3rem;
+}
+
+.download > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.download .button {
+    display: flex;
+    align-items: center;
+    transition: .125s;
+    border-radius: 15px;
+    background-color: var(--dark-200);
+    color: var(--font-100);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: .5rem 1rem;
+}
+
+.download .button:hover {
+    background-color: var(--dark-300);
+}
+
+.download .button:active {
+    scale: 0.9;
+}
+
+/* dev */
+.dev > div {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+}
+
+.dev .text-block {
+    flex-direction: column !important;
+    align-items: center;
+    width: 23%;
+}
+
+.dev .text-block .big-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dev .text-block img {
+    margin: .5rem 0;
+    object-fit: cover;
+    height: 256px;
+    width: 100%;
 }

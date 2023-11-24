@@ -17,16 +17,28 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.it-breakers-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
 .wrapper-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
  
 aside {
     float: left;
     position: sticky;
-    height: 50vh;
+    height: auto;
     top: 25px;
     color: var(--font-100);
     background-color: var(--dark-100);
@@ -38,7 +50,8 @@ aside {
     background-color: var(--dark-100);
     color: var(--font-100);
     padding: 25px;
-    margin: 25px;   
+    margin: 25px;
+    box-shadow: 0 0 .5rem var(--dark-100);
 }
 
 main section {
@@ -47,5 +60,6 @@ main section {
 }
 
 section > h1 {
+    text-align: center;
     font-size: xx-large;
 }
