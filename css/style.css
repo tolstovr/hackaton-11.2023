@@ -54,24 +54,41 @@ aside, .navbar, .navbar ul {
 /* header */
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
-    padding: 0 !important;
-    padding: 15px !important;  
+    align-items: flex-start;
+}
+
+header .button {
+    display: inline;
+    margin: 0;
+}
+
+header .button:active {
+    scale: 0.9 !important;
 }
 
 header > img {
     object-fit: cover;
     border-radius: 15px;
-    height: 50vh
+    aspect-ratio: 1/1;
+    width: 324px;
 }
 
 header > .caption {
-    margin: 0 20px;
+    margin-left: 1.5rem;
+}
+
+header > .caption .normal-text {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: var(--font-400);
+    margin-bottom: 2.5rem;
 }
 
 header > .caption > .big-text {
     font-weight: bold;
+    font-size: 3rem;
 }
 
 /* game */
@@ -125,7 +142,7 @@ header > .caption > .big-text {
     justify-content: center;
 }
 
-.download .button {
+.button {
     display: flex;
     align-items: center;
     transition: .125s;
@@ -138,7 +155,7 @@ header > .caption > .big-text {
     margin: .5rem 1rem;
 }
 
-.download .button:hover {
+.button:hover {
     background-color: var(--dark-300);
 }
 

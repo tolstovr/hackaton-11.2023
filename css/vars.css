@@ -6,8 +6,10 @@
     --dark-200: #2b2a33;
     --dark-300: #42414d;
     --font-100: #fefefe;
+    --font-150: #dedede;
     --font-200: #cecece;
     --font-300: #aaaaaa;
+    --font-400: #999999;
 }
 
 .big-text {font-size: 2rem;}
