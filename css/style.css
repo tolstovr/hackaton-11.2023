@@ -191,3 +191,10 @@ header > .caption > .big-text {
     height: 256px;
     width: 100%;
 }
+
+/* game */
+.game .text-block img {
+    height: 192px;
+    width: 256px;
+    object-fit: cover;
+}
