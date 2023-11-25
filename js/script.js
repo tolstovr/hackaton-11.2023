@@ -43,13 +43,6 @@ $(document).ready(function() {
     });
 });
 
-// //navbar
-// $("#navbar-toggle").click(function() {
-//     $(".navbar-content").slideToggle(125);
-//     $("#navbar-toggle").toggleClass("bi-list");
-//     $("#navbar-toggle").toggleClass("bi-box-arrow-up");
-// });
-
 //scroll animation
 function element_visible(entry) {
     entry.forEach(change => {
@@ -66,3 +59,19 @@ let elements = $(".fade-right, .scale");
 for (let elm of elements) {
     observer.observe(elm);
 };
+
+const $header = $("aside");
+let prevScroll;
+let lastShowPos;
+
+$(window).on("scroll", function() {
+    const scrolled = $(window).scrollTop();
+
+    if (scrolled > 100 && scrolled > prevScroll) {
+        $header.addClass("aside-out");
+        lastShowPos = scrolled;
+    } else if (scrolled <= Math.max(lastShowPos - 100, 0)) {
+        $header.removeClass("aside-out");
+    }
+    prevScroll = scrolled;
+})

@@ -7,6 +7,10 @@ aside, .navbar, .navbar ul {
     flex-direction: column;
 }
 
+.mobile-only {
+    display: none !important;
+}
+
 .brand-separator {
     height: 0;
     width: calc(100% - 2rem);
